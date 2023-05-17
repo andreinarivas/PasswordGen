@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password generator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>Password Generator</h1>
+    </div>
+    <div class="result">
+      <textarea type="text" class="result_password" id="result_password" wrap="soft"></textarea>
+      <div class="copy_button">
+        <button class="copy" id="copy_button">
+          <img src="./copy.png">
+        </button>
+      </div>
+    </div>
+    <div class="input">
+      <input id="select_length" class="select" type="range" min="5" max="40">
+      <div class="labels">
+        <label for="select_length">5</label>
+        <label for="select_length">40</label>
+      </div>
+    </div>
+    <div class="generate">
+      <button id="generate_button"class="generate_button">Generate Password</button>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
